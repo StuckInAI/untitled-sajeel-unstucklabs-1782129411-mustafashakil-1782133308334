@@ -15,7 +15,7 @@ const restaurants = [
     time: '18-22 min',
     tag: 'Popular',
     emoji: '🍕',
-    accent: 'bg-orange-100',
+    accent: 'bg-blue-100',
   },
   {
     name: 'Green Garden',
@@ -34,7 +34,7 @@ export default function RestaurantShowcase() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.35em] text-orange-500">Restaurants near you</p>
+            <p className="text-sm font-black uppercase tracking-[0.35em] text-blue-500">Restaurants near you</p>
             <h2 className="mt-4 max-w-2xl text-4xl font-black tracking-tight text-stone-950 md:text-5xl">
               Fresh picks ready for tonight.
             </h2>
@@ -47,11 +47,11 @@ export default function RestaurantShowcase() {
           {restaurants.map((restaurant) => (
             <article
               key={restaurant.name}
-              className="overflow-hidden rounded-[2.25rem] bg-white shadow-xl shadow-orange-100 transition hover:-translate-y-2"
+              className="overflow-hidden rounded-[2.25rem] bg-white shadow-xl shadow-blue-100 transition hover:-translate-y-2"
             >
               <div className={`${restaurant.accent} relative flex h-56 items-center justify-center`}>
                 <span className="text-8xl drop-shadow-sm">{restaurant.emoji}</span>
-                <span className="absolute right-5 top-5 rounded-full bg-white px-4 py-2 text-sm font-black text-orange-600 shadow-sm">
+                <span className="absolute right-5 top-5 rounded-full bg-white px-4 py-2 text-sm font-black text-blue-600 shadow-sm">
                   {restaurant.tag}
                 </span>
               </div>
@@ -63,7 +63,7 @@ export default function RestaurantShowcase() {
                   </div>
                   <div className="rounded-2xl bg-stone-950 px-3 py-2 text-sm font-black text-white">★ {restaurant.rating}</div>
                 </div>
-                <div className="mt-6 flex items-center justify-between rounded-2xl bg-orange-50 px-4 py-3 text-sm font-black text-stone-700">
+                <div className="mt-6 flex items-center justify-between rounded-2xl bg-blue-50 px-4 py-3 text-sm font-black text-stone-700">
                   <span>🕒 {restaurant.time}</span>
                   <span>From $4.99</span>
                 </div>

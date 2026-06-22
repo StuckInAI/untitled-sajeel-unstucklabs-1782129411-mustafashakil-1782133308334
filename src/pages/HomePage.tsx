@@ -7,7 +7,7 @@ import RestaurantShowcase from '@/components/RestaurantShowcase';
 
 export default function HomePage() {
   return (
-    <main id="top" className="min-h-screen overflow-hidden bg-orange-50 text-stone-950">
+    <main id="top" className="min-h-screen overflow-hidden bg-blue-50 text-stone-950">
       <Navbar />
       <Hero />
       <CategoryStrip />
