@@ -20,10 +20,10 @@ export default function OrderSteps() {
   return (
     <section id="how-it-works" className="px-6 py-20">
       <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.75rem] bg-stone-950 p-6 text-white shadow-2xl shadow-stone-300 lg:grid-cols-[0.85fr_1.15fr] lg:p-10">
-        <div className="rounded-[2.25rem] bg-blue-500 p-8 lg:p-10">
-          <p className="text-sm font-black uppercase tracking-[0.35em] text-blue-100">How it works</p>
+        <div className="rounded-[2.25rem] bg-gradient-to-br from-orange-500 to-pink-500 p-8 lg:p-10">
+          <p className="text-sm font-black uppercase tracking-[0.35em] text-orange-100">How it works</p>
           <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">Dinner plans in three simple steps.</h2>
-          <p className="mt-5 text-lg leading-8 text-blue-50">
+          <p className="mt-5 text-lg leading-8 text-orange-50">
             The experience is designed to feel quick, clear, and reassuring from the first tap to the first bite.
           </p>
           <div className="mt-8 rounded-3xl bg-white/15 p-5">

@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
     <section className="relative px-6 pb-20 pt-32 lg:pt-36">
-      <div className="absolute left-1/2 top-16 -z-0 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-300/30 blur-3xl" />
+      <div className="absolute left-1/2 top-16 -z-0 h-72 w-72 -translate-x-1/2 rounded-full bg-orange-200/40 blur-3xl" />
       <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-extrabold text-blue-600 shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white px-4 py-2 text-sm font-extrabold text-orange-600 shadow-sm">
             <span>⚡</span>
             Average delivery in 24 minutes
           </div>
@@ -17,13 +17,13 @@ export default function Hero() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
               href="#restaurants"
-              className="rounded-full bg-blue-500 px-8 py-4 text-center text-base font-black text-white shadow-2xl shadow-blue-300 transition hover:-translate-y-1 hover:bg-blue-600"
+              className="rounded-full bg-gradient-to-r from-orange-500 to-pink-500 px-8 py-4 text-center text-base font-black text-white shadow-2xl shadow-orange-300 transition hover:-translate-y-1 hover:from-orange-600 hover:to-pink-600"
             >
               Browse restaurants
             </a>
             <a
               href="#how-it-works"
-              className="rounded-full border border-stone-200 bg-white px-8 py-4 text-center text-base font-black text-stone-950 shadow-sm transition hover:-translate-y-1 hover:border-blue-300"
+              className="rounded-full border border-stone-200 bg-white px-8 py-4 text-center text-base font-black text-stone-950 shadow-sm transition hover:-translate-y-1 hover:border-orange-300"
             >
               See how it works
             </a>
@@ -34,7 +34,7 @@ export default function Hero() {
               ['4.9★', 'top rated'],
               ['18k', 'orders delivered'],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-3xl bg-white p-5 shadow-lg shadow-blue-100">
+              <div key={label} className="rounded-3xl bg-white p-5 shadow-lg shadow-orange-100">
                 <p className="text-2xl font-black text-stone-950">{value}</p>
                 <p className="mt-1 text-sm font-semibold text-stone-500">{label}</p>
               </div>
@@ -42,29 +42,29 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute -right-6 -top-6 h-36 w-36 rounded-full bg-blue-300/50 blur-2xl" />
-          <div className="relative rounded-[2.5rem] bg-stone-950 p-4 shadow-2xl shadow-blue-200">
-            <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-blue-100 via-white to-sky-100 p-6">
+          <div className="absolute -right-6 -top-6 h-36 w-36 rounded-full bg-orange-200/50 blur-2xl" />
+          <div className="relative rounded-[2.5rem] bg-stone-950 p-4 shadow-2xl shadow-orange-200">
+            <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-orange-50 via-white to-amber-50 p-6">
               <div className="flex items-center justify-between rounded-3xl bg-white/80 p-4 shadow-sm">
                 <div>
-                  <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-500">Arriving now</p>
+                  <p className="text-sm font-black uppercase tracking-[0.25em] text-orange-500">Arriving now</p>
                   <p className="mt-1 text-xl font-black text-stone-950">Spicy ramen bowl</p>
                 </div>
                 <span className="text-4xl">🍜</span>
               </div>
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="rounded-[2rem] bg-white p-5 shadow-lg shadow-blue-100">
+                <div className="rounded-[2rem] bg-white p-5 shadow-lg shadow-orange-100">
                   <div className="text-6xl">🍕</div>
                   <p className="mt-4 text-lg font-black">Margherita</p>
                   <p className="text-sm font-semibold text-stone-500">12 min away</p>
                 </div>
-                <div className="rounded-[2rem] bg-blue-500 p-5 text-white shadow-lg shadow-blue-300">
+                <div className="rounded-[2rem] bg-gradient-to-br from-orange-500 to-pink-500 p-5 text-white shadow-lg shadow-orange-300">
                   <div className="text-6xl">🥗</div>
                   <p className="mt-4 text-lg font-black">Fresh salad</p>
-                  <p className="text-sm font-semibold text-blue-100">Free delivery</p>
+                  <p className="text-sm font-semibold text-orange-100">Free delivery</p>
                 </div>
               </div>
-              <div className="mt-5 rounded-[2rem] bg-white p-5 shadow-lg shadow-blue-100">
+              <div className="mt-5 rounded-[2rem] bg-white p-5 shadow-lg shadow-orange-100">
                 <div className="flex items-center gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-100 text-2xl">🛵</div>
                   <div className="flex-1">
