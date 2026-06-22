@@ -6,7 +6,7 @@ RUN npm install --legacy-peer-deps
 COPY . .
 # If this app reads any VITE_* variables, declare an ARG + ENV pair for each
 # one HERE, before the build — Vite inlines import.meta.env.VITE_* at build time.
-RUN npx vite build
+RUN npm run build
 
 # Serve stage — static files behind nginx with SPA fallback
 FROM nginx:alpine
