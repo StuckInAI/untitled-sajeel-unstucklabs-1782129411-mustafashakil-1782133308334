@@ -2,7 +2,7 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY . .
 # If this app reads any VITE_* variables, declare an ARG + ENV pair for each
 # one HERE, before the build — Vite inlines import.meta.env.VITE_* at build time.
